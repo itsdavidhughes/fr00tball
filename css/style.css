@@ -16,10 +16,12 @@
     animation: spin 0.25s infinite linear;
 }
 
-
-
 @keyframes spin {
   to {
     transform: rotate(360deg);
   }
+}
+
+img{
+    max-width: 100%;
 }
