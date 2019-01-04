@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+  <head>
+    <title>fr00tball at New Adventures (naconf) in Nottingham. Friday 25 Jan 2019</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+   
+  </head>
+
+  <style type="text/css">
+
+  </style>
+
+  <body>
+      <div id="container">
+          <div class="header">
+            <h1>Fr00tball <span>in </span><span id="countdown"></span></h1> 
+
+            <ul>
+                <li><a href="https://www.google.com/maps/dir/Wilford+Village+Tram+Stop/Gresham+Sports+Park,+Gresham+Park+Rd,+West+Bridgford,+Nottingham+NG2+7YF/@52.9328553,-1.1561737,15.99z/data=!4m14!4m13!1m5!1m1!1s0x4879c23687b321e5:0x398d9166aefcf4a6!2m2!1d-1.15568!2d52.93574!1m5!1m1!1s0x4879c24ae58c05bf:0xb0663f2759d0603f!2m2!1d-1.1528359!2d52.9305744!3e3?shorturl=1">Directions</a> · </li>
+                <li><a href="http://twitter.com/fr00tball">Updates</a> · </li>
+                <li><a href="mailto:help@fr00tball.com">Email us</a> · </li>
+                <li><a href="https://goo.gl/forms/5NzrmDCCAfWgMoU83">Register →</a></li>
+            </ul>
+            
+          </div>
+          <div id="main-info">
+              <div id="register">
+                <p><b>Friday 25 Jan</b><br>2-5pm<br>Gresham Sports Centre, Nottingham </p>
+                <a class="btn" href="https://goo.gl/forms/5NzrmDCCAfWgMoU83">Register → </a>
+                <span class="hint">Teams and individuals welcome</span>
+              </div>
+          </div>
+          <div id="caption"><span class="caption-text">↑ Fr00tball at Prospect Park, Brooklyn </span><span class="photo-credit">Photo: Robbie Manson</span></div>
+
+          <div id="grid">
+
+            <div class="faqs">
+
+            <h2>Proud to be part of the amazing New Adventures Conference in Nottingham</h2>
+
+            <h3>What is fr00tball?</h3>
+            <p>We're offering you a once in a lifetime opportunity to play football in a slightly competitive, non-judgemental environment.</p>
+            <p>You don't have to be a pro, in fact if you've never played at all, we'd love you to come along for a kickabout and enjoy the fun.                     
+            <p>Spectators and cheerleaders are more than welcome, in fact they would be greatly appreciated.</p>
+            <br>
+            <h3>Where is it?</h3>
+            <p>We'll be playing at the <a href="https://goo.gl/maps/gWcYuJAC7A62">Gresham Sports Centre</a>. One of the best sporting facilities in Nottingham. There are even changing rooms at the venue. No expense spared. </p>
+            <br>
+
+            <h3>Best way to get there?</h3>
+            <p>From the center of town, it's best to get the Tram or a taxi. Here's some <a href="https://www.google.com/maps/dir/Wilford+Village+Tram+Stop/Gresham+Sports+Park,+Gresham+Park+Rd,+West+Bridgford,+Nottingham+NG2+7YF/@52.9328553,-1.1561737,16z/data=!4m14!4m13!1m5!1m1!1s0x4879c23687b321e5:0x398d9166aefcf4a6!2m2!1d-1.15568!2d52.93574!1m5!1m1!1s0x4879c24ae58c05bf:0xb0663f2759d0603f!2m2!1d-1.1528359!2d52.9305744!3e3">walking directions</a> from the nearest tram stop (Wilford Village Tram Stop).</p>
+            <br>
+
+            <h3>Sounds good. Do I need a full team?</h3>
+            <p>No, not at all. Individuals are more than welcome. Register as a solo and we can pick more teams on the day. However teams are welcome if you can round up a minimum of 5 folk. </p>
+            <br>
+            </div>
+
+            <div class="sidebar">
+
+                <img class="collage" src="images/sidebar-collage.png">
+
+                <blockquote class="bq-one"><img src="images/quote-2.jpg">“Good laugh at fr00tball today—the trophy getting broke before kick off was definitely a highlight! #naconf”</blockquote>
+                <blockquote class="bq-two"><img src="images/quote.jpg">“I asked random people to make a team with me, and I discovered an amazing designer :D”</blockquote>
+                <blockquote class="bq-three"><img src="images/quote-3.jpg">“Great way to end a few days away at a conference. Love fr00tball #naconf”</blockquote>
+            </div>
+
+          </div>
+        
+      </div>
+      
+
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 25, 2019 14:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+        
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+        
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+    // Output the result in an element with id="demo"
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+        
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+    }
+    }, 1000);
+    </script>
+  </body>
+</html>

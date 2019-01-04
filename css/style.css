@@ -8,7 +8,21 @@
       font-family: 'iA Writer Duospace', monospace;
       font-size: 16px;
       line-height: 1.5;
-  }
+      background: #252525;
+      box-sizing: border-box;
+      color: #373737;    
+      -webkit-font-smoothing: antialiased;
+      -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 2s; /* Firefox < 16 */
+       -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+           animation: fadein 2s;
+}
+
+@keyframes fadein {
+   from { opacity: 0; }
+   to   { opacity: 1; }
+}
 
   i {
     display: inline-block;
@@ -23,5 +37,227 @@
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
+}
+
+#container{
+    max-width: 1090px;
+    background: #ECCDEE;
+    margin: 0 auto;
+    border: 5px solid #252525;
+    padding: 0px 40px 40px;
+}
+
+.header{
+    padding: 16px 0px 15px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.header h1{
+    float:left;
+}
+
+.header ul{
+    float: right;
+    margin-top: -5px;
+}
+
+ul li{
+    display: inline;
+    list-style-type: none;
+    
+}
+
+ul li a{
+   font-size: 12px;
+   text-decoration: none;
+   color: #252525;
+    
+}
+
+
+
+#main-info{
+    background: url(../images/fr00tball-prospect-park-2.jpg) no-repeat;
+    height: 540px;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    clear: both;
+    background-color: #eccdee;
+}
+
+#register{
+    background: white;
+    padding: 20px;
+    max-width: 260px;
+    float:right;
+    text-align: left;
+    margin-right: -1em;
+    margin-top: 1em;
+
+}
+
+h1{
+    font-size: 12px;
+}
+h1 span{
+    font-style: italic;
+    font-weight: normal;
+}
+
+h1 span#countdown{
+    font-weight: normal;
+}
+
+h2{
+    font-size: 42px;
+    line-height: 58px;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 80px;
+}
+
+h3{
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+#grid p{
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 16px;
+
+}
+
+.btn{
+    width: 100%;
+    background-color:#1D72B0;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 12px 0px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.btn:hover{
+    border-bottom: none;
+    opacity: 0.5;
+}
+
+span.hint{
+    font-size: 12px;
+}
+
+#caption{
+    padding: 16px 0px;
+    border-bottom: 1px solid #252525;
+    text-align: left;
+    font-size: 10px;
+}
+
+#grid{
+    margin-top: 80px;
+    display: grid;
+    text-align: left;
+    grid-template-columns: 50% 50%;
+
+
+}
+
+.faqs{
+    grid-column-start: 1;
+   
+
+}
+
+.sidebar{
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.collage{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    mix-blend-mode: luminosity;   
+    margin-top: -45px;
+    opacity: 0.7;
+}
+
+blockquote{
+    border-top: 2px solid #252525;
+    border-bottom: 1px solid #252525;
+    padding: 30px 0px;
+    font-size: 14px;
+    font-style: italic;
+
+}
+blockquote img{
+    mix-blend-mode: luminosity;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+
+.bq-one{
+    margin-right: 10px;
+}
+
+.bq-two{
+    margin-left: 10px;
+}
+.bq-three{
+    margin-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #171717;
+}
+
+a:hover{
+    text-decoration: none;
+    border-bottom: 1px solid #252525;
+}
+
+@media screen and (max-width:600px){
+
+    .header h1{
+        float: none;
+        padding: 10px 0px;
+    }
+
+    .header ul{
+        float: none;
+        margin-top:0;
+    }
+
+    #grid{
+
+        grid-template-columns: 100%;
+        margin-top: 40px;
+
+    }
+
+    .sidebar{
+        padding-left: 0;
+    }
+
+    h2{
+        font-size: 21px;
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+
+    .collage{
+        margin: 0px 0px 40px 0px;
+    }
 }
