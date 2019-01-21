@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <title>fr00tball at New Adventures (naconf) in Nottingham. Friday 25 Jan 2019</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+   
+  </head>
+
+  <body>
+      <div id="container">
+          <div class="header">
+            <h1>Fr00tball <span>in </span><span id="countdown"></span></h1> 
+
+            <ul>
+                <li><a href="code-of-conduct.html">Code of Conduct</a> · </li>
+                <li><a href="https://www.google.com/maps/dir/Wilford+Village+Tram+Stop/Gresham+Sports+Park,+Gresham+Park+Rd,+West+Bridgford,+Nottingham+NG2+7YF/@52.9328553,-1.1561737,15.99z/data=!4m14!4m13!1m5!1m1!1s0x4879c23687b321e5:0x398d9166aefcf4a6!2m2!1d-1.15568!2d52.93574!1m5!1m1!1s0x4879c24ae58c05bf:0xb0663f2759d0603f!2m2!1d-1.1528359!2d52.9305744!3e3?shorturl=1">Directions</a> · </li>
+                <li><a href="http://twitter.com/fr00tball">Updates</a> · </li>
+                <li><a href="mailto:help@fr00tball.com">Email us</a><span class="dot">· </span></li>
+                <li><a href="https://goo.gl/forms/5NzrmDCCAfWgMoU83">Register →</a></li>
+            </ul>
+            
+          </div>
+
+          
+         
+
+          <div id="grid">
+
+            <div class="code">
+              <h2>Code of Conduct</h2>
+
+              <p>All attendees and volunteers at our event are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We expect cooperation from all participants to help ensure a safe environment for everybody.</p>
+
+              <h3>Please play nice</h3>
+
+              <p>Standard soccer rules apply + <em>no slide tackles</em>. This is supposed to be fun. Nothing serious. Dont be <em>that</em> person.</p>
+
+              <p>We are dedicated to providing a safe and harassment-free fr00ball experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof). We do not tolerate harassment of event participants in any form. Sexual language and imagery is not appropriate at fr00tball. Participants violating these rules may be banished <em>without warning</em> at the discretion of the event organisers.</p>
+
+              
+
+              <h3>More detail</h3>
+
+              <p>Harassment includes offensive verbal comments related to gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion, technology choices, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.</p>
+
+              <p>Participants asked to stop any harassing behavior are expected to comply immediately.</p>
+
+      
+              <p>If a participant engages in harassing behavior, the organisers may take any action they deem appropriate, including warning the offender or expulsion from the event.</p>
+
+              <p>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact an organiser immediately. Organisers can be identified as they&#39;ll be wearing branded clothing and/or badges.</p>
+
+              <p>Organisers will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the event. We value your attendance.</p>
+
+              <p>We expect participants to follow these rules at fr00tball and fr00tball-related social events.</p>
+
+              <h3>Need Help?</h3>
+
+              <p>Contact us by direct message at <a href="http://twitter.com/fr00tball">@fr00tball</a> on Twitter. We look forward to welcoming you in person. Now, let's play fr00tball.</p>
+
+        
+      </div>
+      
+
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 25, 2019 14:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+        
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+        
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+    // Output the result in an element with id="demo"
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+        
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+    }
+    }, 1000);
+    </script>
+  </body>
+</html>
